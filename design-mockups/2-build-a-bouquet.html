@@ -1,0 +1,82 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>2 Build a bouquet</title>
+<link rel="stylesheet" href="base.css">
+<style>
+body { height: 1560px; }
+.wrap { display: grid; grid-template-columns: 600px 1fr; gap: 56px; padding: 20px 64px 0; }
+.stage { position: relative; height: 1130px; border-radius: 300px 300px 36px 36px; background: linear-gradient(#f3d9d6, #f7e9d2); overflow: hidden; }
+.stage img.bq { position: absolute; left: 60px; bottom: -10px; width: 500px; }
+.tag { position: absolute; background: #fff; border-radius: 999px; padding: 9px 16px; font-size: 14px; font-weight: 700; box-shadow: 0 6px 16px rgba(40,30,10,.12); }
+.tag i { display: inline-block; width: 11px; height: 11px; border-radius: 50%; margin-right: 8px; }
+.note { position: absolute; left: 36px; bottom: 40px; width: 200px; background: #fffdf8; padding: 18px; transform: rotate(-5deg); box-shadow: 0 10px 24px rgba(40,30,10,.18); font-size: 25px; line-height: 1.15; }
+.right h1 { font-size: 64px; line-height: 1.04; margin: 12px 0 14px; }
+.right > p { font-size: 18px; max-width: 560px; line-height: 1.55; }
+.steps { display: flex; gap: 10px; margin: 30px 0 18px; font-size: 14px; font-weight: 700; }
+.steps span { padding: 10px 18px; border-radius: 999px; border: 1.5px solid var(--line); color: #8a8c84; }
+.steps span.on { background: var(--olive); color: #fff; border-color: var(--olive); }
+.stems { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.stem { padding: 18px; position: relative; height: 300px; border: 2px solid transparent; }
+.stem.sel { border-color: var(--olive); }
+.stem img { height: 180px; margin: 0 auto; object-fit: contain; }
+.stem b { display: block; margin-top: 10px; font-size: 18px; }
+.stem small { color: #6d7068; font-size: 14px; }
+.qty { position: absolute; right: 16px; bottom: 18px; display: flex; align-items: center; gap: 10px; font-weight: 700; }
+.qty span { width: 30px; height: 30px; line-height: 28px; text-align: center; border-radius: 50%; border: 1.5px solid var(--olive); color: var(--olive); }
+.qty span.p { background: var(--olive); color: #fff; }
+.row { display: flex; align-items: center; gap: 14px; margin-top: 24px; font-weight: 700; font-size: 15px; }
+.sw { width: 34px; height: 34px; border-radius: 50%; box-shadow: 0 0 0 3px var(--paper), 0 0 0 4.5px transparent; }
+.sw.on { box-shadow: 0 0 0 3px var(--paper), 0 0 0 5px var(--olive); }
+.sum { margin-top: 28px; padding: 24px 28px; display: flex; align-items: center; justify-content: space-between; }
+.sum .t { font-family: 'Fraunces', serif; font-size: 38px; font-weight: 700; }
+.msg { margin: 34px 64px 0; display: grid; grid-template-columns: 1fr 520px; gap: 40px; align-items: center; border-top: 1.5px solid var(--line); padding-top: 34px; }
+.msg h2 { font-size: 34px; }
+.msg p { margin-top: 10px; font-size: 17px; max-width: 560px; line-height: 1.5; }
+.bubble { background: #dcf8c6; border-radius: 18px 18px 4px 18px; padding: 18px 22px; font-size: 15.5px; line-height: 1.55; box-shadow: 0 4px 12px rgba(0,0,0,.08); }
+</style></head><body>
+
+<nav>
+  <img class="logo" src="assets/p9_03.png">
+  <ul><li>My Story</li><li>Chapters</li><li style="border-bottom:2px solid var(--olive);padding-bottom:4px">Build a Bouquet</li><li>Festive</li><li>How to Order</li></ul>
+  <span class="box">Gift box · 2</span>
+</nav>
+
+<div class="wrap">
+  <div class="stage">
+    <img class="bq" src="assets/p5_07.png">
+    <span class="tag" style="left:60px;top:270px"><i style="background:#f3c11b"></i>Sunny Bloom</span>
+    <span class="tag" style="right:40px;top:330px"><i style="background:#f1a7b5"></i>Pinky Blush ×2</span>
+    <span class="tag" style="right:60px;top:560px"><i style="background:#3b56c4"></i>Blueberry</span>
+    <span class="tag" style="left:40px;top:520px"><i style="background:#7a1f2e"></i>Wine Kiss</span>
+    <div class="note hand">Happy birthday, Maa!<br>— with love ♥</div>
+  </div>
+
+  <div class="right">
+    <div class="eyebrow">Little Love Blooms · the bouquet studio</div>
+    <h1>Build a bouquet<br>that never wilts.</h1>
+    <p class="muted">Pick your stems, choose the colours, add a little note. We make it by hand, just for you.</p>
+    <div class="steps"><span class="on">1 · Pick stems</span><span>2 · Colours</span><span>3 · Wrap &amp; note</span><span>4 · Send</span></div>
+    <div class="stems">
+      <div class="card stem"><img src="assets/p5_01.png"><b style="color:#8a6cc7">Violet Wish</b><small>₹149</small><div class="qty"><span class="p">+</span></div></div>
+      <div class="card stem sel"><img src="assets/p5_02.png"><b style="color:#e27b93">Pinky Blush</b><small>₹149</small><div class="qty"><span>−</span>2<span class="p">+</span></div></div>
+      <div class="card stem sel"><img src="assets/p5_03.png"><b style="color:#e39a12">Sunny Bloom</b><small>₹149</small><div class="qty"><span>−</span>1<span class="p">+</span></div></div>
+      <div class="card stem sel"><img src="assets/p5_04.png"><b style="color:#7a1f2e">Wine Kiss</b><small>₹149</small><div class="qty"><span>−</span>1<span class="p">+</span></div></div>
+      <div class="card stem sel"><img src="assets/p5_05.png"><b style="color:#2f6fc9">Blueberry</b><small>₹149</small><div class="qty"><span>−</span>1<span class="p">+</span></div></div>
+      <div class="card stem"><img src="assets/p5_06.png"><b style="color:#d42a22">Rosie Pop</b><small>₹149</small><div class="qty"><span class="p">+</span></div></div>
+    </div>
+    <div class="row">Custom colour
+      <i class="sw on" style="background:#f1a7b5"></i><i class="sw" style="background:#b79be0"></i><i class="sw" style="background:#f3c11b"></i><i class="sw" style="background:#d42a22"></i><i class="sw" style="background:#7cc4ee"></i><i class="sw" style="background:#fff;border:1.5px dashed #999"></i>
+      <span class="muted" style="font-weight:500">or tell us your own</span>
+    </div>
+    <div class="card sum">
+      <div><div class="muted" style="font-size:14px;font-weight:700">YOUR BOUQUET · 5 STEMS</div><div class="t">₹745</div></div>
+      <span class="btn wa">Send to WhatsApp →</span>
+    </div>
+  </div>
+</div>
+
+<div class="msg">
+  <div><div class="eyebrow">No checkout, no login</div><h2 style="margin-top:8px">One tap writes the order for you.</h2><p class="muted">The site fills in product name, quantity and colour — exactly what the catalogue asks customers to DM — and opens WhatsApp.</p></div>
+  <div class="bubble">Hi Little Gifts Story! 💌 I’d like to order a bouquet:<br>• Pinky Blush × 2<br>• Sunny Bloom × 1 • Wine Kiss × 1 • Blueberry × 1<br>Note: “Happy birthday, Maa!”<br><b>Total: ₹745</b></div>
+</div>
+<div class="label">DESIGN 2 — BUILD A BOUQUET (signature feature page)</div>
+</body></html>

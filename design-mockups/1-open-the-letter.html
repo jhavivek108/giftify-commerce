@@ -1,0 +1,99 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>1 Open the letter</title>
+<link rel="stylesheet" href="base.css">
+<style>
+body { height: 2610px; }
+.hero { height: 900px; position: relative; text-align: center; }
+.hero .eyebrow { padding-top: 6px; }
+.env { position: absolute; left: 400px; top: 380px; width: 640px; height: 380px; }
+.env .flap { position: absolute; left: 0; top: -200px; width: 100%; height: 201px; background: #d9ccae; clip-path: polygon(0 100%, 50% 0, 100% 100%); }
+.env .back { position: absolute; inset: 0; background: #e2d6bb; border-radius: 0 0 14px 14px; }
+.env .letter { position: absolute; left: 44px; right: 44px; top: -290px; height: 600px; background: #fffdf8; border-radius: 8px; box-shadow: 0 10px 40px rgba(74,68,22,.16); padding: 40px 44px; z-index: 2;
+  background-image: repeating-linear-gradient(#fffdf8 0 37px, #f0eadb 37px 38px); }
+.env .letter .script { font-size: 54px; color: var(--olive); text-align: left; line-height: 1; }
+.env .letter h1 { font-size: 46px; line-height: 1.12; margin-top: 16px; background: #fffdf8; }
+.env .letter p { margin-top: 14px; font-size: 16px; background: #fffdf8; display: inline-block; padding: 0 8px; }
+.env .front { position: absolute; inset: 0; z-index: 3; background: linear-gradient(#f1e9d6, #e9dfc7); clip-path: polygon(0 0, 50% 58%, 100% 0, 100% 100%, 0 100%); border-radius: 0 0 14px 14px; }
+.env .seal { position: absolute; z-index: 4; left: 290px; top: 190px; width: 60px; height: 60px; border-radius: 50%; background: #c9717a; color: #fff; font-size: 30px; line-height: 60px; box-shadow: 0 4px 10px rgba(0,0,0,.18); }
+.hero .cta { position: absolute; left: 0; right: 0; top: 800px; display: flex; gap: 16px; justify-content: center; z-index: 5; }
+.float { position: absolute; filter: drop-shadow(0 12px 14px rgba(40,30,10,.16)); }
+
+.story { display: grid; grid-template-columns: 430px 1fr; gap: 80px; padding: 90px 150px 80px; align-items: center; position: relative; border-top: 1.5px solid var(--line); margin: 0 64px; }
+.story .ph { position: relative; transform: rotate(-3deg); background: #fff; padding: 16px 16px 56px; box-shadow: 0 14px 34px rgba(40,30,10,.16); }
+.story .ph img { width: 100%; }
+.story .ph::before { content: ''; position: absolute; top: -16px; left: 140px; width: 130px; height: 34px; background: rgba(201,113,122,.55); transform: rotate(2deg); }
+.story .ph span { position: absolute; bottom: 12px; left: 0; right: 0; text-align: center; font-size: 26px; }
+.story h2 { font-size: 46px; line-height: 1.12; margin: 14px 0 22px; }
+.story p { font-size: 18px; line-height: 1.7; max-width: 560px; }
+.story .sig { font-size: 50px; color: var(--olive); margin-top: 16px; }
+.pg { position: absolute; right: 0; top: 30px; font-size: 13px; font-weight: 700; color: var(--gold); letter-spacing: .1em; }
+
+.chapters { padding: 70px 64px 40px; position: relative; }
+.chapters > h2 { font-size: 52px; margin: 10px 0 36px; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+.ch { padding: 28px 30px; height: 300px; position: relative; overflow: hidden; }
+.ch .no { font-family: 'Fraunces', serif; font-size: 15px; color: var(--gold); font-weight: 600; letter-spacing: .1em; }
+.ch h3 { font-size: 32px; margin-top: 8px; }
+.ch p { margin-top: 8px; font-size: 15px; color: #6d7068; }
+.ch .go { position: absolute; left: 30px; bottom: 28px; font-weight: 700; font-size: 15px; color: var(--olive); }
+.ch img { position: absolute; right: 18px; bottom: 16px; max-height: 185px; max-width: 190px; object-fit: contain; }
+
+.bar { position: absolute; left: 50%; transform: translateX(-50%); bottom: 34px; background: #fff; border-radius: 999px; padding: 10px 10px 10px 28px; display: flex; align-items: center; gap: 22px; box-shadow: 0 14px 40px rgba(40,30,10,.2); font-weight: 700; z-index: 30; }
+.bar small { font-weight: 500; color: #6d7068; }
+</style></head><body>
+
+<nav>
+  <img class="logo" src="assets/p9_03.png">
+  <ul><li>My Story</li><li>Chapters</li><li>Build a Bouquet</li><li>Festive</li><li>How to Order</li></ul>
+  <span class="box">Gift box · 2</span>
+</nav>
+
+<section class="hero">
+  <div class="eyebrow">Product catalogue · 2026 · Made to order</div>
+
+  <img class="float" src="assets/p3_04.png" style="left:150px;top:70px;width:150px;transform:rotate(-14deg)">
+  <img class="float" src="assets/p4_10.png" style="left:70px;top:330px;width:200px;transform:rotate(8deg)">
+  <img class="float" src="assets/p1_10.png" style="left:110px;top:520px;width:260px">
+  <img class="float" src="assets/p7_02.png" style="right:110px;top:20px;width:280px;transform:rotate(5deg)">
+  <img class="float" src="assets/p3_10.png" style="right:330px;top:330px;width:110px;transform:rotate(-10deg)">
+  <img class="float" src="assets/p1_08.png" style="right:60px;top:440px;width:330px">
+
+  <div class="env">
+    <div class="flap"></div><div class="back"></div>
+    <div class="letter">
+      <div class="script">Dear you,</div>
+      <h1>A little something,<br>made by hand.</h1>
+      <p class="muted">Pipe-cleaner flowers • accessories • festive decor</p>
+    </div>
+    <div class="front"></div><div class="seal">♥</div>
+  </div>
+  <div class="cta"><span class="btn solid">Open the catalogue</span><span class="btn line">Read my story</span></div>
+</section>
+
+<section class="story">
+  <span class="pg">02</span>
+  <div class="ph"><img src="assets/p2_01.png"><span class="hand">five years in the making ♥</span></div>
+  <div>
+    <div class="eyebrow">My story</div>
+    <h2>Because every emotion deserves a gift.</h2>
+    <p>I kept telling myself I’d start someday, and before I knew it, five years had passed. So I took that first step and turned my love for art and crafts into something of my own. Every piece is handmade with love, patience and care.</p>
+    <div class="script sig">Little Gifts Story</div>
+  </div>
+</section>
+
+<section class="chapters">
+  <div class="eyebrow">Turn the page</div>
+  <h2>Six little chapters</h2>
+  <div class="grid">
+    <div class="card ch"><div class="no">CHAPTER 03</div><h3>Little Charms</h3><p>12 keychains · ₹50 each</p><span class="go">Read chapter →</span><img src="assets/p3_08.png"></div>
+    <div class="card ch"><div class="no">CHAPTER 04</div><h3>Little Clips</h3><p>12 styles · ₹50 for a set of 2</p><span class="go">Read chapter →</span><img src="assets/p4_13.png"></div>
+    <div class="card ch"><div class="no">CHAPTER 05</div><h3>Little Love Blooms</h3><p>6 stems · ₹149 each</p><span class="go">Read chapter →</span><img src="assets/p5_07.png"></div>
+    <div class="card ch"><div class="no">CHAPTER 06</div><h3>Tiny Gardens</h3><p>4 potted blooms · ₹299 each</p><span class="go">Read chapter →</span><img src="assets/p6_03.png"></div>
+    <div class="card ch"><div class="no">CHAPTER 07</div><h3>Mangal Dwaar</h3><p>Door hangings · from ₹249 a pair</p><span class="go">Read chapter →</span><img src="assets/p7_01.png"></div>
+    <div class="card ch"><div class="no">CHAPTER 08</div><h3>Subh Jyoti</h3><p>Diya holders · from ₹249 a pair</p><span class="go">Read chapter →</span><img src="assets/p8_07.png"></div>
+  </div>
+</section>
+
+<div class="bar"><span>Gift box <small>· 2 items · ₹199</small></span><span class="btn wa">Send order on WhatsApp</span></div>
+<div class="label">DESIGN 1 — OPEN THE LETTER (home page)</div>
+</body></html>

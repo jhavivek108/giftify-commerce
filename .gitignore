@@ -1,0 +1,22 @@
+# dependencies
+node_modules/
+
+# environment files (never commit real values)
+.env
+backend/.env
+frontend/.env
+.env.local
+.env.*.local
+
+# build output
+dist/
+
+# uploaded images (keep the folder, ignore its contents)
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# logs and OS noise
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db

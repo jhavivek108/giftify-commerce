@@ -1,0 +1,73 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>4 Gift by feeling</title>
+<link rel="stylesheet" href="base.css">
+<style>
+body { height: 2060px; }
+.hero { text-align: center; padding: 30px 0 46px; }
+.hero h1 { font-size: 96px; line-height: 1; margin: 16px auto 0; max-width: 1000px; }
+.hero h1 em { font-family: 'Allura', cursive; font-weight: 400; font-size: 128px; color: #c9414f; font-style: normal; }
+.hero p { font-size: 19px; margin-top: 18px; }
+.chips { display: flex; gap: 12px; justify-content: center; margin-top: 30px; font-weight: 700; font-size: 16px; }
+.chips span { padding: 13px 22px; border-radius: 999px; background: #fff; border: 1.5px solid var(--line); }
+.chips span.on { background: var(--ink); color: #fff; border-color: var(--ink); }
+.feel { display: grid; grid-template-columns: repeat(12, 1fr); gap: 24px; padding: 0 64px; }
+.f { border-radius: 36px; position: relative; overflow: hidden; height: 430px; padding: 34px 36px; }
+.f .k { font-size: 13px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; opacity: .75; }
+.f h2 { font-size: 48px; line-height: 1.04; margin-top: 10px; max-width: 330px; }
+.f p { margin-top: 12px; font-size: 16px; max-width: 250px; line-height: 1.45; }
+.f .go { position: absolute; left: 36px; bottom: 32px; background: rgba(255,255,255,.92); color: var(--ink); padding: 12px 20px; border-radius: 999px; font-weight: 700; font-size: 15px; }
+.f img { position: absolute; filter: drop-shadow(0 14px 14px rgba(0,0,0,.18)); }
+.love { grid-column: span 7; background: #f6c9cf; color: #6e1420; }
+.cheer { grid-column: span 5; background: #ffe08a; color: #5a3c00; }
+.self { grid-column: span 4; background: #d9cdf3; color: #37246b; }
+.luck { grid-column: span 4; background: #cfe4fb; color: #0e2f6b; }
+.tiny { grid-column: span 4; background: #d5ead2; color: #1e4a26; }
+.fest { margin: 24px 64px 0; border-radius: 36px; background: #5a1026; color: #ffe9c2; height: 520px; position: relative; overflow: hidden; padding: 56px 60px;
+  background-image: radial-gradient(circle at 78% 40%, rgba(255,190,90,.35), transparent 55%); }
+.fest h2 { font-size: 66px; line-height: 1.02; margin-top: 14px; max-width: 560px; color: #fff; }
+.fest p { margin-top: 16px; font-size: 18px; max-width: 460px; line-height: 1.5; }
+.fest .btn { margin-top: 26px; background: #ffc857; color: #5a1026; }
+.fest img { position: absolute; filter: drop-shadow(0 16px 18px rgba(0,0,0,.35)); }
+.toggle { position: absolute; right: 40px; top: 36px; background: rgba(255,255,255,.14); border-radius: 999px; padding: 8px 8px 8px 20px; font-size: 14px; font-weight: 700; display: flex; align-items: center; gap: 12px; z-index: 3; }
+.toggle i { width: 54px; height: 30px; border-radius: 999px; background: #ffc857; position: relative; }
+.toggle i::after { content: ''; position: absolute; right: 3px; top: 3px; width: 24px; height: 24px; border-radius: 50%; background: #5a1026; }
+</style></head><body>
+
+<nav>
+  <img class="logo" src="assets/p9_03.png">
+  <ul><li>Gift by Feeling</li><li>All Products</li><li>Festive</li><li>My Story</li><li>How to Order</li></ul>
+  <span class="box">Gift box · 2</span>
+</nav>
+
+<section class="hero">
+  <div class="eyebrow">Because every emotion deserves a gift</div>
+  <h1>What do you want<br>to <em>say</em> today?</h1>
+  <p class="muted">Pick a feeling. We’ll show you the little handmade thing that says it.</p>
+  <div class="chips"><span class="on">All feelings</span><span>Under ₹100</span><span>Under ₹300</span><span>For her</span><span>For home</span><span>Return gifts</span></div>
+</section>
+
+<section class="feel">
+  <div class="f love"><div class="k">Feeling 01</div><h2>“I love you.”</h2><p>Roses that never wilt, hearts you can carry, a bouquet made stem by stem.</p><span class="go">9 gifts · from ₹50 →</span>
+    <img src="assets/p3_03.png" style="right:330px;top:40px;width:130px;transform:rotate(-12deg)"><img src="assets/p6_01.png" style="right:30px;bottom:-10px;width:300px"></div>
+  <div class="f cheer"><div class="k">Feeling 02</div><h2>“Cheer up, sunshine.”</h2><p>Sunflowers for a rough week.</p><span class="go">7 gifts · from ₹50 →</span>
+    <img src="assets/p6_03.png" style="right:20px;bottom:-6px;width:210px"></div>
+  <div class="f self"><div class="k">Feeling 03</div><h2>“Just for me.”</h2><p>Clips and bows for a little everyday joy.</p><span class="go">12 gifts · ₹50 →</span>
+    <img src="assets/p4_10.png" style="right:14px;bottom:70px;width:170px;transform:rotate(10deg)"></div>
+  <div class="f luck"><div class="k">Feeling 04</div><h2>“Stay safe.”</h2><p>Nazar and lucky charms to keep close.</p><span class="go">2 gifts · ₹50 →</span>
+    <img src="assets/p3_10.png" style="right:26px;bottom:60px;width:140px;transform:rotate(-10deg)"></div>
+  <div class="f tiny"><div class="k">Feeling 05</div><h2>“Thinking of you.”</h2><p>A single bloom, hand-delivered.</p><span class="go">6 gifts · ₹149 →</span>
+    <img src="assets/p5_02.png" style="right:10px;bottom:-20px;width:170px"></div>
+</section>
+
+<section class="fest">
+  <div class="toggle">Festive mode <i></i></div>
+  <div class="eyebrow" style="color:#ffc857">Feeling 06 · Mangal Dwaar &amp; Subh Jyoti</div>
+  <h2>“Bless this home.”</h2>
+  <p>Shubh-Labh door hangings, torans and diya holders. Flip festive mode and the whole site dresses up for the season.</p>
+  <span class="btn">Explore festive decor →</span>
+  <img src="assets/p7_01.png" style="right:400px;top:50px;width:300px">
+  <img src="assets/p7_04.png" style="right:250px;top:50px;height:420px">
+  <img src="assets/p8_07.png" style="right:-10px;bottom:-30px;width:260px">
+</section>
+<div class="label">DESIGN 4 — GIFT BY FEELING (home page)</div>
+</body></html>

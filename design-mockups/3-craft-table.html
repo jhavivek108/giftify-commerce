@@ -1,0 +1,83 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>3 Craft table</title>
+<link rel="stylesheet" href="base.css">
+<style>
+body { height: 1700px; background: #2f6b57;
+  background-image: linear-gradient(rgba(255,255,255,.09) 1.5px, transparent 1.5px), linear-gradient(90deg, rgba(255,255,255,.09) 1.5px, transparent 1.5px), linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+  background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px; }
+nav ul, nav { color: #fff; }
+nav .logo { background: var(--paper); border-radius: 50%; padding: 4px; height: 86px; }
+nav .box { background: #ffd84d; color: #23301f; }
+.it { position: absolute; filter: drop-shadow(0 16px 12px rgba(0,0,0,.32)); }
+.title { position: absolute; left: 360px; top: 250px; width: 720px; background: var(--paper); padding: 54px 50px 46px; text-align: center; transform: rotate(-1.5deg); box-shadow: 0 24px 50px rgba(0,0,0,.35); }
+.title h1 { font-size: 88px; line-height: .98; }
+.title .hand { font-size: 34px; margin-top: 16px; color: #c9414f; }
+.title .btn { margin-top: 24px; }
+.tape { position: absolute; width: 150px; height: 38px; background: rgba(255,216,77,.8); }
+.sticky { position: absolute; width: 170px; padding: 16px 14px 20px; font-size: 27px; line-height: 1.05; box-shadow: 0 10px 16px rgba(0,0,0,.28); color: #23301f; }
+.sticky b { display: block; font-size: 34px; }
+.pol { position: absolute; background: #fff; padding: 14px 14px 54px; box-shadow: 0 18px 34px rgba(0,0,0,.35); }
+.pol span { position: absolute; left: 0; right: 0; bottom: 10px; text-align: center; font-size: 27px; color: #23301f; }
+.tags { position: absolute; left: 64px; right: 64px; bottom: 80px; display: flex; gap: 20px; justify-content: center; }
+.tg { background: #f3e6c8; color: #23301f; padding: 20px 26px 20px 46px; font-weight: 700; font-size: 18px; position: relative; clip-path: polygon(22px 0, 100% 0, 100% 100%, 22px 100%, 0 50%); }
+.tg::before { content: ''; position: absolute; left: 22px; top: 50%; width: 11px; height: 11px; margin-top: -5px; border-radius: 50%; background: #2f6b57; }
+.tg small { display: block; font-weight: 500; font-size: 13px; opacity: .7; }
+.hint { position: absolute; color: #fff; font-size: 30px; opacity: .92; }
+svg.fz { position: absolute; }
+</style></head><body>
+
+<nav>
+  <img class="logo" src="assets/p9_03.png">
+  <ul><li>The Table</li><li>Charms</li><li>Clips</li><li>Blooms</li><li>Festive</li><li>My Story</li></ul>
+  <span class="box">Gift box · 2</span>
+</nav>
+
+<svg class="fz" style="left:0;top:150px" width="1440" height="1300" viewBox="0 0 1440 1300" fill="none">
+  <defs><filter id="fuzz" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="9"/></filter></defs>
+  <path d="M-20 980 C 200 860, 300 1120, 520 1010 S 820 900, 980 1030 S 1300 1100, 1470 940" stroke="#ff7fb0" stroke-width="15" stroke-linecap="round" filter="url(#fuzz)"/>
+  <path d="M-20 90 C 120 30, 220 150, 330 80" stroke="#ffd84d" stroke-width="15" stroke-linecap="round" filter="url(#fuzz)"/>
+  <path d="M1120 60 C 1220 0, 1330 140, 1470 50" stroke="#9fd8ff" stroke-width="15" stroke-linecap="round" filter="url(#fuzz)"/>
+</svg>
+
+<img class="it" src="assets/p3_01.png" style="left:90px;top:190px;width:170px;transform:rotate(-16deg)">
+<img class="it" src="assets/p3_04.png" style="left:250px;top:560px;width:150px;transform:rotate(12deg)">
+<img class="it" src="assets/p4_10.png" style="left:60px;top:700px;width:200px;transform:rotate(-8deg)">
+<img class="it" src="assets/p6_01.png" style="left:110px;top:1010px;width:250px">
+<img class="it" src="assets/p3_11.png" style="left:430px;top:770px;width:150px;transform:rotate(10deg)">
+<img class="it" src="assets/p4_03.png" style="left:640px;top:800px;width:200px;transform:rotate(-12deg)">
+<img class="it" src="assets/p3_03.png" style="left:900px;top:790px;width:150px;transform:rotate(14deg)">
+<img class="it" src="assets/p7_02.png" style="right:60px;top:170px;width:290px;transform:rotate(7deg)">
+<img class="it" src="assets/p3_10.png" style="right:310px;top:600px;width:120px;transform:rotate(-18deg)">
+<img class="it" src="assets/p6_03.png" style="right:90px;top:960px;width:210px">
+<img class="it" src="assets/p4_13.png" style="left:560px;top:1120px;width:200px;transform:rotate(-6deg)">
+<img class="it" src="assets/p3_08.png" style="left:860px;top:1100px;width:140px;transform:rotate(9deg)">
+
+<div class="title">
+  <div class="tape" style="left:-50px;top:-14px;transform:rotate(-28deg)"></div>
+  <div class="tape" style="right:-50px;top:-14px;transform:rotate(28deg);background:rgba(255,127,176,.8)"></div>
+  <div class="eyebrow">Fresh off the craft table</div>
+  <h1 style="margin-top:12px">little gifts<br>story</h1>
+  <div class="hand">pick it up, turn it around, make it yours ✿</div>
+  <span class="btn solid">Start picking</span>
+</div>
+
+<div class="sticky hand" style="left:270px;top:330px;background:#ffd84d;transform:rotate(-7deg);width:130px">Little Sun<b>₹50</b></div>
+<div class="sticky hand" style="right:300px;top:440px;background:#ff9ec3;transform:rotate(5deg);width:160px">Phool Jhilmil<b>₹249</b></div>
+<div class="sticky hand" style="left:350px;top:1150px;background:#b9e4ff;transform:rotate(4deg);width:160px">Rosy Basket<b>₹299</b></div>
+
+<div class="pol" style="right:120px;top:640px;width:290px;transform:rotate(6deg)">
+  <img src="assets/p2_01.png" style="width:100%"><span class="hand">hi, I made these!</span>
+</div>
+
+<div class="hint hand" style="left:1010px;top:1330px;transform:rotate(-4deg)">↖ drag anything around</div>
+
+<div class="tags">
+  <div class="tg">Little Charms<small>₹50 each</small></div>
+  <div class="tg">Little Clips<small>₹50 / set of 2</small></div>
+  <div class="tg">Love Blooms<small>₹149 each</small></div>
+  <div class="tg">Tiny Gardens<small>₹299 each</small></div>
+  <div class="tg">Mangal Dwaar<small>from ₹249</small></div>
+  <div class="tg">Subh Jyoti<small>from ₹249</small></div>
+</div>
+<div class="label">DESIGN 3 — THE CRAFT TABLE (home page)</div>
+</body></html>
